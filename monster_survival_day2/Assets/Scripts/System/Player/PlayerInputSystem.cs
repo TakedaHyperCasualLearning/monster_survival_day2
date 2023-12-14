@@ -20,7 +20,7 @@ public class PlayerInputSystem : MonoBehaviour
 
     public Vector3 MouseClickInput()
     {
-        if (Input.GetMouseButtonDown(0)) { return Input.mousePosition; }
+        if (Input.GetMouseButton(0)) { return Input.mousePosition; }
         else { return Vector3.zero; }
     }
 }
