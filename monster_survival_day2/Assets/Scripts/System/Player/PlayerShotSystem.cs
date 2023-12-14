@@ -12,6 +12,7 @@ public class PlayerShotSystem : MonoBehaviour
     {
         this.gameEvent = gameEvent;
         playerShotComponent.ShotInterval = SHOT_INTERVAL;
+        gameEvent.GetPlayerShotSpeed = () => playerShotComponent.ShotInterval;
     }
 
 
