@@ -20,7 +20,8 @@ public class EnemySpawnSystem : MonoBehaviour
     {
         enemySpawnComponent.SpawnTimer += Time.deltaTime;
         if (enemySpawnComponent.SpawnTimer < enemySpawnComponent.SpawnInterval) return;
-        gameEvent.GenerateEnemy(new Vector3(1.0f, 0.0f, 1.0f));
+        Vector2 randomPosition = Random.insideUnitCircle * 10.0f;
+        gameEvent.GenerateEnemy(new Vector3(randomPosition.x, 0.0f, randomPosition.y));
         enemySpawnComponent.SpawnTimer = 0.0f;
 
     }
