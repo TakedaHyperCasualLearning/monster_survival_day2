@@ -311,8 +311,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1027965198}
   - component: {fileID: 1027965201}
-  - component: {fileID: 1027965200}
   - component: {fileID: 1027965199}
+  - component: {fileID: 1027965200}
   m_Layer: 0
   m_Name: FieldPlane
   m_TagString: Untagged
@@ -424,8 +424,8 @@ Transform:
   m_GameObject: {fileID: 1056728035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1027965198}
   m_Father: {fileID: 0}
@@ -531,6 +531,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 6530270442195281493, guid: 3044ff9f7aa46489d861a127b95307c8, type: 3}
   cameraObject: {fileID: 963194225}
   enemyPrefab: {fileID: 3635178410387364124, guid: 7f8e7b7a3248541b1a77ff0455398687, type: 3}
+  bulletPrefab: {fileID: 6623839314920499688, guid: 5729ea9ba61304b448b28954764dd842, type: 3}
 --- !u!4 &1443186806
 Transform:
   m_ObjectHideFlags: 0
